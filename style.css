@@ -1,0 +1,97 @@
+
+/*Cores*/
+
+/*Fundo: #F6C476, Botões: Secundarios#201814, #d52818 Principal#D52818, #A6381E*/
+
+
+body{
+    background-color: #F6C476;
+    color: black;
+    margin: 0%;
+}
+header {
+    width: 100%;
+}
+
+header ul {
+    list-style: none;
+    display: flex;
+}
+
+header ul li {
+
+    margin-left: 10%;
+    margin-top: 3%;
+    font-size: 22px;
+    text-decoration:dashed;
+}
+
+
+/*sEÇÕES PRINCIPAIS*/
+#secaoprincipal{
+    margin-top: 6%;
+}
+#secaoprincipalleft{
+        text-align: left;
+}
+#secaoprincipalleft h1{
+    font-size: 45px;
+}
+
+#secaoprincipalleft h2{
+    font-size: 25px;
+    padding: 30px 0px 0px 50px    ;
+}
+
+#btnprincipal{
+margin-top: 6%;
+margin-left: 12%;
+border-radius: 10px;
+border: none;
+background-color: #d52818;
+color:white;
+font-size: 20px;
+width: 300px;
+height: 60px;
+
+}
+
+#secaoprincipalright {
+    margin-top: -5%;
+    border-radius: 20px;
+    background-image: url(images/texturalaranja.jpg);
+}
+#secaoprincipalright > #pizzaimgtopo{
+    margin-top: -1%;
+}
+
+
+
+/*SEGUNDA SEÇÃO*/
+
+#segundasecao{
+    background-color: white;
+    margin-top: 10%;
+    height: 100vh;
+
+}
+
+#secaogrid{
+
+
+}
+
+#secaoapresentacao > h4{
+
+    margin-top: 20%;
+    text-align: left;
+
+}
+
+#secaoapresentacao > p{
+    text-align: left;
+    font-size: 22px;
+    width: 450px;
+    margin-top: 20px;
+
+}
