@@ -1,0 +1,40 @@
+
+/*@media only screen and (min-width: 1024px) {
+  /* Estilos para telas maiores que 1024px de largura */
+
+header {
+    width: auto;
+}
+
+header ul {
+    list-style: none;
+    display: flex;
+}
+
+header ul li {
+    margin: auto;
+    margin-top: 3%;
+    font-size: 28px;
+    text-decoration:dashed;
+}
+
+
+@media only screen and (max-width: 767px) {
+      /* Estilos para telas menores que 767px de largura */
+
+    header ul li {
+        margin: auto;
+        font-size: 16px;
+    }
+
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+    /* Estilos para telas entre 768px e 1023px de largura */
+
+    header ul li{
+        font-size: 1.8em;
+    }
+
+  }
+  

@@ -9,43 +9,34 @@ body{
     color: black;
     margin: 0%;
 }
-header {
+
+/*SEÇÕES MAIORES*/
+
+.secoesmaiores{
     width: 100%;
+    height: 1000px;
+
 }
-
-header ul {
-    list-style: none;
-    display: flex;
+/*SEÇÕES PRINCIPAIS*/
+#secaoprincipal{ /*container bootstrap*/
 }
-
-header ul li {
-
-    margin-left: 10%;
-    margin-top: 3%;
-    font-size: 22px;
-    text-decoration:dashed;
-}
-
-
-/*sEÇÕES PRINCIPAIS*/
-#secaoprincipal{
-    margin-top: 6%;
-}
-#secaoprincipalleft{
+/*#secaoprincipalleft{
         text-align: left;
-}
+}*/
 #secaoprincipalleft h1{
     font-size: 45px;
+    text-align: left;
+    margin-top: 10%;
 }
 
 #secaoprincipalleft h2{
+    text-align: left;
     font-size: 25px;
-    padding: 30px 0px 0px 50px    ;
+    padding-top: 20px;
 }
 
 #btnprincipal{
 margin-top: 6%;
-margin-left: 12%;
 border-radius: 10px;
 border: none;
 background-color: #d52818;
@@ -53,11 +44,13 @@ color:white;
 font-size: 20px;
 width: 300px;
 height: 60px;
+align-self: left;
+
 
 }
 
 #secaoprincipalright {
-    margin-top: -5%;
+    margin-top: 0%;
     border-radius: 20px;
     background-image: url(images/texturalaranja.jpg);
 }
@@ -65,26 +58,108 @@ height: 60px;
     margin-top: -1%;
 }
 
+@media only screen and (max-width: 767px) {
+    /* Estilos para telas menores que 767px de largura */
 
 
+    #secaoprincipalleft h1{
+        font-size: 35px;
+        padding: 30px;
+        text-align: center;
+    }
+
+    #secaoprincipalleft h2{
+        text-align: center;
+    }
+
+    #btnprincipal{
+        margin: auto;
+        display: flex;
+        align-self: center;
+        text-align: center;
+        margin-top: 3%;
+    }
+
+    #secaoprincipalright {
+        margin-top: 10%;
+    }
+  }
+
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+    /* Estilos para telas entre 768px e 1023px de largura */
+    #secaoprincipalleft h1{
+        font-size: 35px;
+        padding: 30px;
+        text-align: center;
+    }
+
+    #secaoprincipalleft h2{
+        text-align: center;
+    }
+
+    #btnprincipal{
+        margin: auto;
+        display: flex;
+        align-self: center;
+        text-align: center;
+        margin-top: 3%;
+    }
+
+    #secaoprincipalright {
+        margin-top: 10%;
+    }
+  }
+  
 /*SEGUNDA SEÇÃO*/
 
-#segundasecao{
+#apresentacaopizzas{ /*secaomaior*/
+    width: 100%;
+    height: 130vh;
+    background-color: white;
+}
+
+#segundasecao{ /*Esse aqui é o container do bootstrap que está com ID*/
     background-color: white;
     margin-top: 10%;
     height: 100vh;
 
 }
 
-#secaogrid{
 
+#secaogrid{ /*Criada seção onde fica as 3 imagens*/
+
+height: 500px;
+margin-top: 10%;
 
 }
 
+#imgsecaoprimeira{ /*primeira imagem*/
+    width: 700px;
+    height: 250px;
+    border-radius: 10px;
+    margin-top: 5%;
+}
+
+#imgspequenas{ /*seção onde fica as duas imagens pequenas juntas*/
+    display: flex;
+        
+
+
+}
+.imgsecaogrid{ /*duas imagens menores*/
+    max-width: 50%;
+    height: 250px;
+    border-radius: 10px;
+
+}
+
+
 #secaoapresentacao > h4{
 
-    margin-top: 20%;
+    margin-top: 40%;
+    margin-left: 8%;
     text-align: left;
+
 
 }
 
@@ -92,6 +167,193 @@ height: 60px;
     text-align: left;
     font-size: 22px;
     width: 450px;
-    margin-top: 20px;
+    margin-top: 250px;
+    padding: 20px;
+}
+
+
+@media only screen and (max-width: 767px) {
+    /* Estilos para telas menores que 767px de largura */
+    
+    #imgsecaoprimeira{
+        width: 70vw;
+    }
+    #imgspequenas{
+        display: flex;
+    }
+    .imgsecaogrid{
+        max-width: 50%;
+    }
+    #secaoapresentacao > p{
+        margin-top: 50%;
+        display: none;
+    }
+  }
+
+  @media only screen and (min-width: 768px) and (max-width: 1023px) {
+    /* Estilos para telas entre 768px e 1023px de largura */
+    #apresentacaopizzas{
+        height: 180vh;
+    }
+    #secaoapresentacao > p{
+        margin-top: 15%;
+        margin-left: 0%;
+        width: auto;
+    }
+  }
+  
+  
+
+
+/*seção cardapio*/
+
+#secaocardapio{
+    margin-top: 10%;
 
 }
+#apresentacaocardapio{
+    height: 100vh;
+}
+#sabor1, #sabor2, #sabor3{
+    margin-top: 5%;
+    height: 100%; /*350px*/
+
+}
+#sabor1 > img, #sabor2 > img, #sabor3 > img{
+    border-radius: 50%;
+}
+/*Botões eu quero*/
+
+.euquerobtn{
+    width: 170px;
+    height: 50px;
+    background-color: #201814;
+    color: goldenrod;
+    margin-top: 8%;
+}
+
+@media only screen and (max-width: 767px) {
+    /* Estilos para telas menores que 767px de largura */
+    #apresentacaocardapio{
+        height: 320vh;
+    }
+  }
+  
+
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+  /* Estilos para telas entre 768px e 1023px de largura */
+    #apresentacaocardapio{
+        height: 260vh;
+        display: flex;
+        align-items: center;
+    
+    }
+    #sabor1, #sabor2, #sabor3{
+        margin-left: 20%;
+    }
+    .euquerobtn{
+      align-self: center;
+    }
+}
+
+
+
+/*secao "montagem" pizza*/
+
+#apresentacaomontagem{
+    background-color: white;
+    height: 100%;
+}
+
+#secaomontagem > h1{
+    text-align: center;
+    padding-top: 40px;
+}
+#secaomontagem  .col{
+    height: 70vh;
+}
+
+#text > p {
+    
+    margin-top: 20%;
+    margin-left: 5%;
+    text-align: left;
+    font-size: 18px;
+    width: 450px;
+}
+
+@media only screen and (max-width: 767px) {
+    /* Estilos para telas menores que 767px de largura */
+    #apresentacaomontagem{
+        height: 100%;
+    }
+    #text > p {
+        text-align: center;
+    }
+  }
+  
+  @media only screen and (min-width: 768px) and (max-width: 1023px) {
+    /* Estilos para telas entre 768px e 1023px de largura */
+    #text > p{
+        width: auto;
+        
+    }
+  }
+  
+
+/*PROMOÇÕES*/
+
+
+#apresentacaopromocoes{
+    background-color: #F6C476;
+    height: 100%;
+    
+}
+#apresentacaopromocoes > h1{
+    text-align: center;
+    margin-top: 120px;
+
+}
+
+#promocao1, #promocao2, #promocao3{
+    height: 70vh;
+
+}
+
+#promocao1 > img, #promocao2 > img, #promocao3 >img{
+    width: 400px;
+    height: 300px;
+    border-radius: 20px;
+    margin-top: 10%;
+}
+
+#promocao1 > p, #promocao2 > p, #promocao3 >p {
+    margin-top: 20px;
+    font-size: 18px;
+}
+
+.btnpromocao{
+    margin-top: 10px;
+border-radius: 10px;
+border: none;
+background-color: #69150d;
+color:white;
+font-size: 20px;
+width: 200px;
+height: 40px;
+}
+/*body{
+    div{
+        img{
+
+        }
+    }
+}*/
+
+@media only screen and (max-width: 767px) {
+    /* Estilos para telas menores que 767px de largura */
+    #apresentacaopromocoes{
+        height: 270vh;
+    }
+  }
+  
