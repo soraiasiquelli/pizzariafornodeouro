@@ -55,6 +55,16 @@ div#pizzadiv{
     margin: auto;
 }
 
+#btnproximo{
+    background-color: transparent;
+    border: none;
+    display: flex;
+    margin-left: 100px;
+    margin-top: 40%;
+    color: white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 28px
+}
 
 /*pizza*/
 
@@ -106,4 +116,16 @@ section.escolhas{
 }
 section.escolhas h3{
     text-align: center;
+}
+
+/*forms*/
+
+#pizzasdoces > h3, #pizzassalgadas > h3{
+    color: white;
+    text-align: center;
+}
+
+#pizzasdoces, #pizzassalgadas{
+    margin-left: 20px;
+    margin-top: 20%;
 }

@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Monte sua pizza</title>
     <link rel="stylesheet" href="montagem.css">
+    <link rel="shortcut icon" href="images/faviconfornopizzaria.png" type="image/x-icon">
+
 </head>
 <body>
     
@@ -21,7 +23,7 @@
 
             <div id="pizza">
 
-                <input type="button" value="proximo" onclick="proximo()">
+                <input type="button" value="Próximo ->" onclick="proximo()" id="btnproximo">
 
                 
             </div> 
@@ -40,7 +42,7 @@
 
                 <label for="tipo">Quantos sabores terá a pizza? </label>
 
-                <select name="" id="selectsabor">
+                <select name="" id="selectsabor" onchange="mostrarSelecionadores()">
                     <option value="umsabor">Um sabor</option>
                     <option value="doissabores">Dois Sabores</option>
                     <option value="tressabores">Três sabores</option>
@@ -76,6 +78,7 @@
 
                 <h3>Escolha o sabor</h3>
 
+
               <select name="" id="selectsabordoce">
 
 
@@ -103,6 +106,8 @@
     
     
                     <h3>Escolha o sabor</h3>
+                    <div id="selecionadores"></div>
+
     
                   <select name="" id="selectsaborsalgada">
     

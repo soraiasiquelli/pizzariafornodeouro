@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Selecionar Sabores de Pizza</title>
+</head>
+<body>
+
+<label for="tipo_pizza">Selecione o tipo de pizza:</label>
+<select id="tipo_pizza" onchange="mostrarSelecionadores()">
+    <option value="dois_sabores">Dois sabores</option>
+    <option value="tres_sabores">Três sabores</option>
+</select>
+
+<div id="selecionadores"></div>
+
+<script>
+function mostrarSelecionadores() {
+    var tipoPizza = document.getElementById("tipo_pizza").value;
+    var selecionadoresDiv = document.getElementById("selecionadores");
+    selecionadoresDiv.innerHTML = ""; // Limpa o conteúdo anterior
+
+    if (tipoPizza === "dois_sabores") {
+        for (var i = 0; i < 2; i++) {
+            var select = document.createElement("select");
+            select.name = "sabor_" + (i+1);
+            select.innerHTML = "<option value='sabor1'>Sabor 1</option><option value='sabor2'>Sabor 2</option><option value='sabor3'>Sabor 3</option>"; // Adicione as opções de sabor desejadas
+            selecionadoresDiv.appendChild(select);
+        }
+    } else if (tipoPizza === "tres_sabores") {
+        for (var i = 0; i < 3; i++) {
+            var select = document.createElement("select");
+            select.name = "sabor_" + (i+1);
+            select.innerHTML = "<option value='sabor1'>Sabor 1</option><option value='sabor2'>Sabor 2</option><option value='sabor3'>Sabor 3</option>"; // Adicione as opções de sabor desejadas
+            selecionadoresDiv.appendChild(select);
+        }
+    }
+}
+</script>
+
+</body>
+</html>

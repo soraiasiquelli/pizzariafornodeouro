@@ -14,6 +14,7 @@ function proximo() {
     }
 }
 
+
 document.addEventListener('DOMContentLoaded', function() { /*vai acontecer dps que o html carregar*/
 
     /*Declaração de variáveis*/
@@ -46,6 +47,24 @@ document.addEventListener('DOMContentLoaded', function() { /*vai acontecer dps q
         var selectTipo = document.getElementById("selecttipo");
         tipoSelecionado = selectTipo.value; // Atribuindo o valor à variável tipoSelecionado
         localStorage.setItem("Tipo da Pizza", tipoSelecionado);
+
+        
+
+
+
+
+
+
+
+
+
+        
     });
 
 });
+
+
+
+
+
+

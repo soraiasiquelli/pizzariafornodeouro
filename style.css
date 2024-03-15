@@ -1,4 +1,7 @@
-
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Angkor&family=Great+Vibes&display=swap');/*titulo principal*/
+@import url('https://fonts.googleapis.com/css2?family=Angkor&family=Great+Vibes&family=Signika+Negative:wght@300..700&display=swap'); /*paragrafos curtos*/
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap'); /*botões*/
 /*Cores*/
 
 /*Fundo: #F6C476, Botões: Secundarios#201814, #d52818 Principal#D52818, #A6381E*/
@@ -19,25 +22,31 @@ body{
 }
 /*SEÇÕES PRINCIPAIS*/
 #secaoprincipal{ /*container bootstrap*/
+    height: 80vh;
 }
 /*#secaoprincipalleft{
         text-align: left;
 }*/
 #secaoprincipalleft h1{
-    font-size: 45px;
+    font-size: 60px;
     text-align: left;
     margin-top: 10%;
+    font-family: "Angkor", serif;
+
 }
 
 #secaoprincipalleft h2{
     text-align: left;
     font-size: 25px;
     padding-top: 20px;
+    font-family: "Signika Negative", sans-serif;
+
+
 }
 
 #btnprincipal{
-margin-top: 6%;
-border-radius: 10px;
+margin-top: 10%;
+border-radius: 30px;
 border: none;
 background-color: #d52818;
 color:white;
@@ -45,17 +54,21 @@ font-size: 20px;
 width: 300px;
 height: 60px;
 align-self: left;
+font-family: "Noto Sans", sans-serif;
+
 
 
 }
-
+#btnprincipal:hover{
+    background-color: #700f07;
+    transition-duration: 0.8s;
+}
 #secaoprincipalright {
     margin-top: 0%;
     border-radius: 20px;
-    background-image: url(images/texturalaranja.jpg);
 }
 #secaoprincipalright > #pizzaimgtopo{
-    margin-top: -1%;
+    margin-top: -10%;
 }
 
 @media only screen and (max-width: 767px) {
@@ -114,60 +127,62 @@ align-self: left;
 
 #apresentacaopizzas{ /*secaomaior*/
     width: 100%;
-    height: 130vh;
+    height: 100vh;
     background-color: white;
 }
 
-#segundasecao{ /*Esse aqui é o container do bootstrap que está com ID*/
+/*#segundasecao{ Esse aqui é o container do bootstrap que está com ID seções comentadas foram apagadas
     background-color: white;
     margin-top: 10%;
     height: 100vh;
+    border: 2px solid black;
 
-}
+}*/
 
 
-#secaogrid{ /*Criada seção onde fica as 3 imagens*/
+#secaogrid{ /*Criada seção onde fica as 3 imagens com o design*/
 
-height: 500px;
+height: 450px;
+width: 60px !important;
 margin-top: 10%;
 
 }
+#secaogrid > img{
+    border-radius: 20px;
+}
 
-#imgsecaoprimeira{ /*primeira imagem*/
+/*#imgsecaoprimeira{ primeira imagem
     width: 700px;
     height: 250px;
     border-radius: 10px;
     margin-top: 5%;
-}
+}*/
 
-#imgspequenas{ /*seção onde fica as duas imagens pequenas juntas*/
+/*#imgspequenas{ seção onde fica as duas imagens pequenas juntas
     display: flex;
         
 
 
 }
-.imgsecaogrid{ /*duas imagens menores*/
+.imgsecaogrid{ duas imagens menores
     max-width: 50%;
     height: 250px;
     border-radius: 10px;
 
-}
-
-
-#secaoapresentacao > h4{
-
-    margin-top: 40%;
-    margin-left: 8%;
-    text-align: left;
+}*/
+#secaoapresentacao { /*texto*/
+    margin-top: 10%;
+    height: 450px;
 
 
 }
+
 
 #secaoapresentacao > p{
-    text-align: left;
+    display: flex;
+    text-align: right;
     font-size: 22px;
-    width: 450px;
-    margin-top: 250px;
+    margin-top: 15%;
     padding: 20px;
 }
 
@@ -208,28 +223,76 @@ margin-top: 10%;
 /*seção cardapio*/
 
 #secaocardapio{
-    margin-top: 10%;
+    display: flex;
+    height: 60vh;
+    align-items: center;   
+    background-color: #021d34;
+
 
 }
 #apresentacaocardapio{
-    height: 100vh;
+    height: 80vh;
+    background-color: #021d34;
+
 }
-#sabor1, #sabor2, #sabor3{
+#apresentacaocardapio > h1{
+    text-align: center;
+    padding-top: 40px;
+    color: white;
+font-family: "Signika Negative", sans-serif;
+
+
+}
+
+div.bloco{
+    width: 30%;
+    height: 50vh;
+    margin-top: -10px;
+    margin-left: 25px;
+    border-top-left-radius: 30px;
+    border-bottom-right-radius: 50px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+
+} 
+
+div.bloco:hover{
+   /* background-color: #153f59;*/
+    transition-duration: 2s;
+
+}
+div.bloco > img {
+    width: 180px;
+    height:180px;
+    margin-top: 20px;
+    border-radius: 50%;
+}
+/*#sabor1, #sabor2, #sabor3{
     margin-top: 5%;
-    height: 100%; /*350px*/
+    height: 100%; 350px
+    border: 2px solid black;
+    margin-left: 50px;
+    width: 30%;
 
 }
 #sabor1 > img, #sabor2 > img, #sabor3 > img{
     border-radius: 50%;
-}
+}*/
+
+
 /*Botões eu quero*/
 
 .euquerobtn{
     width: 170px;
     height: 50px;
-    background-color: #201814;
+    background-color: #700f07;
     color: goldenrod;
-    margin-top: 8%;
+    margin-top: 10%;
+    border: none;
+    border-radius: 20px;
+}
+.euquerobtn:hover{
+    background-color: #d52818;
+    transition-duration: 2s;
 }
 
 @media only screen and (max-width: 767px) {
@@ -305,7 +368,7 @@ margin-top: 10%;
 
 
 #apresentacaopromocoes{
-    background-color: #F6C476;
+
     height: 100%;
     
 }
@@ -317,14 +380,15 @@ margin-top: 10%;
 
 #promocao1, #promocao2, #promocao3{
     height: 70vh;
-
+    
 }
 
 #promocao1 > img, #promocao2 > img, #promocao3 >img{
     width: 400px;
     height: 300px;
-    border-radius: 20px;
-    margin-top: 10%;
+    border-top-left-radius: 30px;
+    border-bottom-right-radius: 50px;
+        margin-top: 10%;
 }
 
 #promocao1 > p, #promocao2 > p, #promocao3 >p {
