@@ -30,7 +30,7 @@ body{
 #secaoprincipalleft h1{
     font-size: 60px;
     text-align: left;
-    margin-top: 10%;
+    margin-top: 10%;        
     font-family: "Angkor", serif;
 
 }
@@ -105,6 +105,7 @@ font-family: "Noto Sans", sans-serif;
         padding: 30px;
         text-align: center;
     }
+
 
     #secaoprincipalleft h2{
         text-align: center;
@@ -239,7 +240,7 @@ margin-top: 10%;
     text-align: center;
     padding-top: 40px;
     color: white;
-font-family: "Signika Negative", sans-serif;
+    
 
 
 }
@@ -331,6 +332,8 @@ div.bloco > img {
 #secaomontagem > h1{
     text-align: center;
     padding-top: 40px;
+    font-family: "Signika Negative", sans-serif;
+
 }
 #secaomontagem  .col{
     height: 70vh;
@@ -338,11 +341,40 @@ div.bloco > img {
 
 #text > p {
     
-    margin-top: 20%;
+    margin-top: 15%;
     margin-left: 5%;
-    text-align: left;
-    font-size: 18px;
+    text-align: right;
+    font-size: 22px;
     width: 450px;
+    /*
+      display: flex;
+    text-align: right;
+    font-size: 22px;
+    margin-top: 15%;
+    padding: 20px;*/
+}
+
+#btnmontaragora{
+   
+        margin-top: 10%;
+        border-radius: 30px;
+        border: none;
+        background-color: #d52818;
+        color:white;
+        font-size: 20px;
+        width: 300px;
+        height: 60px;
+        align-self: left;
+        font-family: "Noto Sans", sans-serif;
+    
+}
+
+#btnmontaragora:hover{
+    
+
+        background-color: #700f07;
+        transition-duration: 0.8s;
+        
 }
 
 @media only screen and (max-width: 767px) {
@@ -369,26 +401,57 @@ div.bloco > img {
 
 #apresentacaopromocoes{
 
-    height: 100%;
+    height: 100vh;
+   /* background-color: #021d34;*/
+   display: flex;
+   flex-wrap: wrap;
+   background-color: #021d34;
+   color: white;
+
+
     
 }
-#apresentacaopromocoes > h1{
+
+.secoes{
+    width: 50%;
+    height: 600px;
+    margin: auto;
+}
+.secoes > img{
+    margin-left: 80px;
+    border-radius: 20px;
+}
+.secoes > h1 {
     text-align: center;
-    margin-top: 120px;
+    margin-top: 60px;
+    font-family: "Signika Negative", sans-serif;
 
 }
-
+.secoes > p{
+    margin-top: 25px;
+    font-size: 20px;
+    width: 60%;
+    margin-left: 150px;
+}
+.secoes > ul {
+    margin-top: 40px;
+    margin-left: 150px;
+    font-size: 17px;
+    
+}
+.secoes > ul > li{
+    margin-top: 10px;
+}
 #promocao1, #promocao2, #promocao3{
     height: 70vh;
-    
+    color: white;
 }
 
 #promocao1 > img, #promocao2 > img, #promocao3 >img{
     width: 400px;
-    height: 300px;
-    border-top-left-radius: 30px;
-    border-bottom-right-radius: 50px;
-        margin-top: 10%;
+    height: 280px;
+   margin-top: 120px;
+   border-radius: 20px;
 }
 
 #promocao1 > p, #promocao2 > p, #promocao3 >p {
@@ -397,15 +460,23 @@ div.bloco > img {
 }
 
 .btnpromocao{
-    margin-top: 10px;
-border-radius: 10px;
-border: none;
-background-color: #69150d;
-color:white;
-font-size: 20px;
-width: 200px;
-height: 40px;
+    margin-top: 20px;
+    margin-left: 150px;
+    border-radius: 30px;
+    border: none;
+    background-color: #d52818;
+    color:white;
+    font-size: 20px;
+    width: 300px;
+    height: 60px;
+    align-self: left;
+    font-family: "Noto Sans", sans-serif;
 }
+.btnpromocao:hover{
+    background-color:#700f07;
+
+}
+
 /*body{
     div{
         img{
@@ -421,3 +492,47 @@ height: 40px;
     }
   }
   
+
+  footer {
+    background-color: #F6C476;
+    height: 50vh;
+    display: flex;
+  }
+
+  #imagemfooter{
+    width: 350px;
+    height: 400px;
+    margin-left: 50px;
+
+  }
+  #imagemfooter > img{
+    width: 350px;
+    height: 400px;
+  }
+  #infofooter{
+    width: 1000px;
+    height: 400px;
+    margin-left: 125px;
+  }
+  #infofooter > h2{
+    text-align: center;
+    margin-top: 120px;
+  }
+  #infofooter > h4{
+    text-align: center;
+  }
+  #btnwhatsapp{
+    background-color: green;
+    color: white;
+    width: 250px;
+    height: 50px;
+    margin-left: 350px;
+    margin-top: 25px;
+    border: none;
+    border-radius: 20px;
+  }
+  #btnwhatsapp:hover{
+    width: 260px;
+    height: 65px;
+    transition-duration: 2s;
+  }

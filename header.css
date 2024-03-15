@@ -21,6 +21,15 @@ header ul li {
 
 }
 
+header a {
+    margin: left;
+    margin-top: 3%;
+    font-size: 22px;
+    text-decoration:dashed;
+    color: black;
+    font-family: "Signika Negative", sans-serif;
+}
+
 header ul li:hover{
     color: #d52818;
     cursor: pointer;
