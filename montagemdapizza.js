@@ -1,34 +1,44 @@
 // Declaração de Variáveis
 var formopcoes = document.getElementById("opcoes");
+var formenvioinfo = document.getElementById("envioinfo")
 var conteudomontagem = document.getElementById("montagem");
 var sectionpersonalizacao = document.getElementById("sectionpersonalizacao");
 var sectionmontagem = document.getElementById("montagem");
 var escolhasdoces = document.getElementById("pizzasdoces");
 var escolhassalgadas = document.getElementById("pizzassalgadas");
+formenvioinfo.style.display = "none"
 
-document.getElementById("saborespizza").addEventListener("change", function() {
+function chamar() {
     var selectSabores = document.getElementById("saborespizza");
     var selectTamanho = document.getElementById("selecttamanho");
     var tamanhoSelecionado = selectTamanho.value;
     var selectTipo = document.getElementById("selecttipo");
     var tipoSelecionado = selectTipo.value;
-    var quantidadeSabores = parseInt(this.value);
+    var quantidadeSabores = parseInt(selectSabores.value); /*pega o número*/
+    formenvioinfo.style.display = "block"
+
 
     // Exibe os selects de pizzas doces ou salgadas a quantidade de vezes selecionada
     for (var i = 0; i < (quantidadeSabores-1); i++) {
         if (tipoSelecionado === "doce") {
             var novoSelectDoce = escolhasdoces.cloneNode(true);
             novoSelectDoce.id = "escolhasdoces_" + (i + 1);
-            novoSelectDoce.style.display = "block";
+            novoSelectDoce.style.display = "block"
             escolhasdoces.parentNode.appendChild(novoSelectDoce);
         } else if (tipoSelecionado === "salgada") {
             var novoSelectSalgada = escolhassalgadas.cloneNode(true);
             novoSelectSalgada.id = "escolhassalgadas_" + (i + 1);
-            novoSelectSalgada.style.display = "block";
+            novoSelectSalgada.style.display = "block"
             escolhassalgadas.parentNode.appendChild(novoSelectSalgada);
         }
     }
-});
+}
+
+
+
+
+
+
 
 document.addEventListener('DOMContentLoaded', function() {
     // Esconde as escolhas de pizzas doces e salgadas
@@ -45,6 +55,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
         // Esconde o formulário
         formopcoes.style.display = "none";
+        chamar();
 
         // Mostra as escolhas de pizzas doces ou salgadas, dependendo do tipo selecionado
         if (tipoSelecionado === "doce") {
@@ -57,5 +68,25 @@ document.addEventListener('DOMContentLoaded', function() {
         var selectTamanho = document.getElementById("selecttamanho");
         var tamanhoSelecionado = selectTamanho.value;
         localStorage.setItem("Tamanho da Pizza", tamanhoSelecionado);
+
+       
+
+
     });
+
+    formenvioinfo.addEventListener('submit', function(event){
+
+
+        var textIng = document.getElementById("texting");
+        var textIngDig = textIng.value
+        localStorage.setItem("Ingredientes escolhidos", textIngDig);
+
+
+
+
+
+
+    });
+
+
 });
