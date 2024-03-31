@@ -2,7 +2,10 @@
 
 body{
     background-color: white;
-    background-image: url(images/1963.jpg);
+    background-image: url(images/2151061983.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    
 }
 section{
    
@@ -21,55 +24,103 @@ h1{
     letter-spacing: 10px;
 }
 
-
-section#montagemdapizza{
-    display: flex;
-    flex-wrap: wrap;
-    margin-top: -30px;
+h2{
+    color: white !important;
 }
 
-form{
+section#montagemdapizza{ /*secao que tem as duas colunas principais*/
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: -80px;
+    height: auto;
+    padding-bottom: 80px;
+}
+
+/*form{
     height: auto;
     padding: 40px;
     width: 800px;
     margin-left: 0px;
+}*/
+
+form{
+    height: auto;
+    padding-bottom: 5%;
+  
 }
-
-
-
+#colpizza > img{
+    opacity: 0.8;
+}
 div#pizza{
     width: 320px; /* Defina o tamanho do círculo */
-  height: 320px; /* Defina o tamanho do círculo */
- /*background-image: linear-gradient(to left, #783d19, #482e1d);*/
- background-image: url(images/texturamarrom.jpg);
-  border-radius: 50%; /* Transforma a caixa em um círculo */
-  border: 10px solid #482e1d;
-  margin: auto  ;
-  margin-top: 100px;
+    height: 320px; /* Defina o tamanho do círculo */
+    /*background-image: linear-gradient(to left, #783d19, #482e1d);*/
+    background-image: url(imagespt02/pizzaumsabor_salgada.png);
+    border-radius: 50%; /* Transforma a caixa em um círculo */
+    border: 10px solid #482e1d;
+    margin: auto  ;
+    margin-top: 100px;
 }
-
-
 
 div.col{
     height: auto;
     margin: auto;
     border-radius: 10px;
-  /*  background-color: #7c6339;*/
-  background-color: white;
- /*   align-items: center;*/
+      background-color: #7c6339;
+    opacity: 0.9;
+    /*   align-items: center;*/
 }
 div#colpizza{
+    margin-top: 120px;
     background-color: transparent;
     width: 30%;
 
 }
 div#colmontagem{
     height: auto;
-    padding: 40px;
-    margin-top: 50px;
-    margin-left: -150px;
-    width: 55%;
+    padding-bottom: 20px; /*80px*/
+    padding-top: 50px;
+    padding-left: 20px;
+    margin-top: 80px;
+    margin-left: -20px;
+    width: 50%;
+  
     
+    
+}
+form#opcoes{
+    margin-top: 0px;
+    padding-bottom: 20px;
+}
+div#divdoce{
+   /* border: 2px solid black;*/
+   margin-top: 30px;
+    align-items: center; /* Alinha os itens verticalmente ao centro */
+    padding-bottom: 50px; 
+}
+div#divdoce > h2, div#divsalgada > h2{
+    text-align: center;
+    font-family: "Signika Negative", sans-serif;
+    font-size: 30px;
+}
+
+
+form#pizzasdoces, form#pizzassalgadas{
+    width: auto;
+    padding: 0px;
+    margin-top: 50px;
+}
+div#divsalgada{
+    width: auto;
+    height: auto;
+    padding-bottom: 50px;
+
+    /*background-color: white;*/    
+}
+form#pizzasalgadas{
+    height: auto;
+    
+
 }
 input[type='checkbox'] {
     margin-left: 120px;
@@ -85,7 +136,7 @@ h1{
 }
 
  label{
-    color: black;
+    color:white;
     font-size: 18px;
     margin-left: 20px;
 }
@@ -99,37 +150,48 @@ h1{
 
     
 }
-/*select{
-    margin-top: 20px;
-}*/
+select{
+    margin-top: 10px;
+    width: 350px;
+}
 #texting{
-    width: 250px;
+    width: 350px;
   /*  margin-top: 20px;*/
 }
 /*Botão Próximo*/
 
-#btnproximo, #btnproximo2{
-    margin-left: 100px;
-    margin-top: 25px;
-    width: 280px;
-    height: 5vh;
-    border-radius: 10px;
-    border: 2px solid black;
+#btnproximo{ /*BOTÃO NA PRIMEIRA SEÇÃO*/
+    margin-top: 40px;
 
     
 }
 
 #btnproximo2{
     width: 140px;
+    margin-left: 60px;
     background-color: #700f07;
     color:white;
 }
+#btnproximo, #btnproximo2{
+    margin-left: 100px;
+    width: 280px;
+    height: 5vh;
+    border-radius: 10px;
+    background-color: #700f07;
+    color: white;
+    border: none;
+
+
+    
+}
+
+
 
 form > h3{
     color:black;
 }
 form > h2{
-    color: black;
+    color: white;
     font-size: 30px;
     text-align: center;
     font-family: "Signika Negative", sans-serif;
@@ -139,8 +201,44 @@ form > h2{
     margin-top: 20px;
 }*/
 #envioinfo{
-    margin-top: -150px;
-    margin-left: 350px;
+    width: auto;
+    margin-top: -2%;
 }
 
-#pizzassalgadas{}
+
+
+
+/*SEÇÃO RELATÓRIOS*/
+
+
+section#relatorio{
+    width: 600px;
+    height: 400px !important;
+    border: 2px solid black;
+    background-color: #7c6339;
+    margin: auto;
+}
+
+section#relatorio > h2{
+    text-align: center;
+    font-size: 32px;
+
+        
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

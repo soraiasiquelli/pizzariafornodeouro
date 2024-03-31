@@ -5,33 +5,48 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Monte sua Pizza Aqui!</title>
     <link rel="stylesheet" href="montagemdapizza.css">
+    <link rel="shortcut icon" href="images/faviconfornopizzaria.png" type="image/x-icon">
+
 </head>
 <body>
     
     <h1>Monte sua Pizza Aqui</h1>
 
-    <section id="main" >
+   
 
 
-            <section id="montagemdapizza">
-                <div class="col" id="colpizza">
-                    <div id="pizza">
-                    </div>
+            <section id="montagemdapizza"> <!--secao que tem as duas colunas principais-->
+
+
+                <div class="col" id="colpizza"> <!--COLUNA ONDE TERÁ A PIZZA-->
+                  <!-- <div id="pizza"></div> CIRCULO QUE É A PIZZA-->
+                    <img src="imagespt02/pizzaumsabor_salgada.png" alt="">
                 </div>
-                          <div class="col" id="colmontagem">
-                <form action="" id="opcoes">
+
+
+
+                
+                <div class="col" id="colmontagem"> <!--COLUNA ONDE SERÁ A MONTAGEM DA PIZZA-->
+
+                <form action="" id="opcoes"> <!--PRIMEIRO FORMULÁRIO-->
+
                     <h2>Faça suas escolhas</h2>
                     
                     <label for="tamanhodapizza">Qual é o tamanho da pizza? </label>
+                    <br>
                     <br>
                     <select name="" id="selecttamanho">
                         <option value="grande"><h2>Grande</h2> <br> <p>| 16 fatias</p></option>
                         <option value="media"><h2>Média</h2> <br> <p>| 8 fatias</p></option>
                         <option value="pequena"><h2>Pequena</h2> <br> <p>| 4 fatias</p></option>
                     </select>
+
+
                     <br>
                     <br>
+
                     <label for="saborespizza">Selecione o quantidade de sabores: </label>
+                    <br>
                     <br>
                     <select name="" id="saborespizza">
                         <option value="1">Um Sabor</option>
@@ -39,43 +54,58 @@
                         <option value="3">Três Sabores</option>
                         <option value="4">Quatro Sabores</option>
                     </select>
+
                     <br>
                     <br>
+                    
                     <label for="tipo">Pizza Doce ou Salgada? </label>
+                    <br>
                     <br>
                     <select name="" id="selecttipo">
                         <option value="salgada">Salgada</option>
                         <option value="doce">Doce</option>
                     </select>
+
                     <br>
+
                     <input type="submit" value="Próximo" id="btnproximo" onclick="proximo()">
+
                 </form>
 
-                <form action="" id="pizzasdoces">
-                    <br>
-                    <br>
-                    <br>
-                    <label for="sabor" id="labelprin">Selecione o sabor da pizza: </label>
-               
-                     <select name="" class="selectsabordoce">
-                    <option value="chocolate">Chocolate</option>
-                    <option value="ninho">Ninho</option>
-                    <option value="nutella">Nutella</option>
-                    <option value="abacaxi">Abacaxi</option>
-                    <option value="banana">Banana</option>
-                  </select>
-                </form>
+                <div id="divdoce"> <!--DIV ONDE TERA AS PIZZAS DOCES-->
+                    <h2>Faça suas escolhas!</h2>
+                    
+                    <form action="" id="pizzasdoces"> <!--FORMULÁRIO DAS PIZZAS DOCES*/-->
+                      <!--  <br>
+                        <br>
+                        <br>-->
+                        <label for="sabor" id="labelprin">Selecione o sabor da pizza: </label>
+                        <div id="selecionadores"></div>
+
+                         <select name="" class="selectsabordoce">
+                        <option value="chocolate">Chocolate</option>
+                        <option value="ninho">Ninho</option>
+                        <option value="nutella">Nutella</option>
+                        <option value="abacaxi">Abacaxi</option>
+                        <option value="banana">Banana</option>
+                      </select>
+                    </form>
+
+                </div>
 
 
                 <div id="divsalgada">
+                    <h2>Faça suas escolhas!</h2>
                     <form action="" id="pizzassalgadas">
+                       <!--<br>
                        <br>
                        <br>
                        <br>
-                       <br>
-                       <br>
+                       <br>-->
                         <label for="sabor">Selecione o sabor da pizza: </label>
                         <div id="selecionadores"></div>
+                        <br>
+                    
                         <select name="" class="selectsaborsalgada">
                         <option value="mussarela">Mussarela</option>
                         <option value="portuguesa">Portuguesa</option>
@@ -87,7 +117,8 @@
                       <br>
                       <label for="ingredientes">Gostaria de acrescentar mais algum ingrediente?</label>
                       <br>
-                    <input type="text" name="" id="texting">
+                      <br>
+                    <input type="text" name="" id="texting" placeholder="Por favor, digite suas preferências aqui">
                     
                       <!--<input type="checkbox" name="checking" id="ing_azeitona"> Azeitona
                       <input type="checkbox" name="checking" id="ing_tomate"> Tomate
@@ -100,7 +131,7 @@
                 </div>
 
                 <form action="" id="envioinfo">
-                    <input type="submit" value="Próximo" id="btnproximo2" onclick="proximo()" >
+                    <input type="submit" value="Próximo" id="btnproximo2" onclick="proximo2()" >
 
                 </form>
 
@@ -108,10 +139,27 @@
                 
                         </div>
                 
-                    </section>
+                  
             </section>
 
-    <section id="montagem">
+
+
+
+         <!--   <section id="relatorio">
+
+
+                <h2>Aqui está o review do seu pedido</h2>
+
+                <div id="review">
+
+
+
+                  
+                </div>
+                
+            </section>-->
+
+ 
     <script src="montagemdapizza.js" defer></script>
 </body>
 </html>
